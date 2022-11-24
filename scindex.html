@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/b9a0719e01.js"
+    crossorigin="anonymous"
+    ></script>
+    <style>
+    .red {
+        color: red;
+    }
+    </style>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <section class="cart">
+        <center>
+        <div class = "Item_One">
+                <button class="removeBtn" type="button" style="background-color:crimson; border-color:transparent; color:white; margin-right:150px">X</button>
+                <h3><a href="/Media/cc1.jpg" target="new"><img src="/Media/cc1.jpg" width="200" height="200"> </a>
+                <br>  <span id="ip1"> 100 </span>TND</h3>
+                <table>
+                    <tr> 
+                        <th> <i class="fas fa-heart"></i> </th>
+                        <th> <button id="mn1" onclick="minusClick(this.id)">-</button> </th>
+                        <th> <p id="qt1">0</p> </th>
+                        <th> <button id="ps1" onclick="plusClick(this.id)">+</button> </th> 
+                    </tr> 
+                </table>
+                <p>Subtotal:</p>
+                <p id="st1">0</p>                                    
+        </div>
+        <div class = "Item_Two">
+            <button class="removeBtn" type="button" style="background-color:crimson; border-color:transparent; color:white; margin-right:150px">X</button>
+            <h3><a href="/Media/cc2.jpg" target="new" ><img src="/Media/cc2.jpg" width="200" height="200"></a>
+            <br> <span id="ip2"> 200 </span>TND</h3>
+            <table>
+                <tr> 
+                    <th> <i class="fas fa-heart"></i> </th>
+                    <th> <button id="mn2" onclick="minusClick(this.id)">-</button> </th>
+                    <th> <p id="qt2">0</p> </th>
+                    <th> <button id="ps2" onclick="plusClick(this.id)">+</button> </th> 
+                </tr> 
+            </table>
+            <p>Subtotal:</p>
+            <p id="st2">0</p>                          
+        </div>
+        <div class = "Item_Three">
+            <button class="removeBtn" type="button" style="background-color:crimson; border-color:transparent; color:white; margin-right:150px">X</button>
+            <h3><a href="/Media/cc3.jpg" target="new"><img src="/Media/cc3.jpg" width="200" height="200">  </a>
+            <br> <span id="ip3"> 300 </span>TND</h3>
+            <table>
+                <tr> 
+                    <th> <i class="fas fa-heart"></i> </th>
+                    <th> <button id="mn3" onclick="minusClick(this.id)">-</button> </th>
+                    <th> <p id="qt3">0</p> </th>
+                    <th> <button id="ps3" onclick="plusClick(this.id)">+</button> </th> 
+                </tr> 
+            </table>
+            <p>Subtotal:</p>
+            <p id="st3">0</p>                                
+        </div>
+        <p><b>TOTAL CART: </b></p>
+        <p id="gt">0</p>
+    </center>
+    </section>
+
+    <script src="/scmain.js"></script>
+</body>
+</html>
